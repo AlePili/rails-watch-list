@@ -1,3 +1,22 @@
-<h1> Moviesssss </h1>
+<div class="card-category card-large" style="background-image: url(<%= asset_path('Movie-yw.png') %>)">
+
+ <div class="text-center">
+        <h1><strong> Add a movie in your list </strong></h1>
 
 
+        <%= link_to "Create a movie list", new_list_path, class: "btn btn-secondary" %>
+        <div class="row">
+        <% @lists.each do |list| %>
+            <div class="co-12 col-sm-6 col-md-4 mb-3">
+                <%= link_to list_path(list), class:"text-decoration-none" do %>
+                <div class="container py-5">
+                    <div class="card-category py-5" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+                        <%= list.name %>
+                    </div>
+                    <% end %>
+                    </div>
+            </div>
+            <% end %>
+       </div>
+    </div>
+ </div>x

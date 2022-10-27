@@ -1,8 +1,12 @@
-<h1> Leave a review </h1>
+<div class="container py-5">
+<div class="bg-white rounded p-3 shadow">
+  <h1> Create a list  </h1>
 
-<%= simple_form_for(list) do |f| %>
-  <%= f.input :title %>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name, placeholder: 'Horror' %>
 
-  
-  <%= f.submit %>
-<% end %>
+    
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+  </div>
+</div>
