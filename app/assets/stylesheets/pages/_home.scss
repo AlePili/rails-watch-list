@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+body {
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+h1 {
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: firebrick;
+}
+
+.card-category {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 60px;
+   
+}
+
+.card-category:hover {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1.5s ease;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(214, 160, 23);
+   
+    font-weight: 700;
+   
+}
+
+
